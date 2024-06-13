@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Flex from "../../core/layouts/Flex";
 import "./index.scss";
 import { ColorSquare } from "./ColorSquare";
