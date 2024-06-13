@@ -1,0 +1,20 @@
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --default-footer-color: #d2d2d2;
+  --default-text-disabled-color: rgba(0, 0, 0, 0.45);
+  --default-app-title-text: #e0dede;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

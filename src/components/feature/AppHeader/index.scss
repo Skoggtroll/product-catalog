@@ -1,0 +1,14 @@
+.app_header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  .app_title {
+    color: var(--default-app-title-text);
+    padding: 1rem;
+    margin: 0;
+  }
+  .app_header_cart_icon {
+    font-size: 1.5rem;
+    color: var(--default-app-title-text);
+  }
+}

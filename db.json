@@ -1,0 +1,261 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "type": "clothing",
+      "name": "Футболка",
+      "price": 1200,
+      "sizes": ["S", "M", "L"],
+      "colors": ["red", "blue", "black"],
+      "installment": true
+    },
+    {
+      "id": 2,
+      "type": "electronics",
+      "name": "Смартфон",
+      "price": 30000,
+      "oldPrice": 35000,
+      "power": "20W",
+      "colors": ["black", "silver"],
+      "installment": true,
+      "promotion": true
+    },
+    {
+      "id": 3,
+      "type": "furniture",
+      "name": "Стол",
+      "price": 8000,
+      "size": "120x60x75",
+      "colors": ["brown", "white"]
+    },
+    {
+      "id": 4,
+      "type": "food",
+      "name": "Хлеб",
+      "price": 50,
+      "oldPrice": 60,
+      "expiryDate": "2024-07-01",
+      "manufactureDate": "2024-06-01",
+      "promotion": true
+    },
+    {
+      "id": 5,
+      "type": "clothing",
+      "name": "Джинсы",
+      "price": 2500,
+      "oldPrice": 3000,
+      "sizes": ["M", "L", "XL"],
+      "colors": ["blue", "black"],
+      "installment": true
+    },
+    {
+      "id": 6,
+      "type": "electronics",
+      "name": "Ноутбук",
+      "price": 55000,
+      "power": "65W",
+      "colors": ["gray", "black"],
+      "installment": true
+    },
+    {
+      "id": 7,
+      "type": "furniture",
+      "name": "Стул",
+      "price": 2500,
+      "size": "45x45x90",
+      "colors": ["black", "brown"]
+    },
+    {
+      "id": 8,
+      "type": "food",
+      "name": "Молоко",
+      "price": 90,
+      "oldPrice": 100,
+      "expiryDate": "2024-06-15",
+      "manufactureDate": "2024-06-01",
+      "promotion": true
+    },
+    {
+      "id": 9,
+      "type": "clothing",
+      "name": "Куртка",
+      "price": 5500,
+      "sizes": ["M", "L"],
+      "colors": ["black", "gray"]
+    },
+    {
+      "id": 10,
+      "type": "electronics",
+      "name": "Телевизор",
+      "price": 45000,
+      "power": "50W",
+      "colors": ["black"],
+      "installment": true
+    },
+    {
+      "id": 11,
+      "type": "furniture",
+      "name": "Шкаф",
+      "price": 12000,
+      "size": "200x100x60",
+      "colors": ["white", "brown"]
+    },
+    {
+      "id": 12,
+      "type": "food",
+      "name": "Сыр",
+      "price": 400,
+      "expiryDate": "2024-08-01",
+      "manufactureDate": "2024-06-01",
+      "promotion": true
+    },
+    {
+      "id": 13,
+      "type": "clothing",
+      "name": "Платье",
+      "price": 3200,
+      "oldPrice": 4000,
+      "sizes": ["S", "M", "L"],
+      "colors": ["red", "blue", "green"]
+    },
+    {
+      "id": 14,
+      "type": "electronics",
+      "name": "Фен",
+      "price": 3000,
+      "oldPrice": 3500,
+      "power": "15W",
+      "colors": ["white", "pink"],
+      "promotion": true
+    },
+    {
+      "id": 15,
+      "type": "furniture",
+      "name": "Диван",
+      "price": 25000,
+      "oldPrice": 30000,
+      "size": "200x100x90",
+      "colors": ["gray", "brown", "blue"],
+      "installment": true
+    },
+    {
+      "id": 16,
+      "type": "food",
+      "name": "Яблоки",
+      "price": 200,
+      "expiryDate": "2024-06-20",
+      "manufactureDate": "2024-06-10"
+    },
+    {
+      "id": 17,
+      "type": "clothing",
+      "name": "Толстовка",
+      "price": 1800,
+      "sizes": ["M", "L", "XL"],
+      "colors": ["gray", "black"],
+      "installment": true,
+      "promotion": true
+    },
+    {
+      "id": 18,
+      "type": "electronics",
+      "name": "Холодильник",
+      "price": 40000,
+      "power": "100W",
+      "colors": ["white", "silver"],
+      "installment": true
+    },
+    {
+      "id": 19,
+      "type": "furniture",
+      "name": "Кресло",
+      "price": 10000,
+      "size": "90x90x100",
+      "colors": ["black", "brown"]
+    },
+    {
+      "id": 20,
+      "type": "food",
+      "name": "Апельсины",
+      "price": 150,
+      "oldPrice": 170,
+      "expiryDate": "2024-06-25",
+      "manufactureDate": "2024-06-05"
+    },
+    {
+      "id": 21,
+      "type": "clothing",
+      "name": "Брюки",
+      "price": 2800,
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["black", "blue", "gray"],
+      "installment": true
+    },
+    {
+      "id": 22,
+      "type": "electronics",
+      "name": "Наушники",
+      "price": 1500,
+      "power": "12W",
+      "colors": ["black", "white"],
+      "installment": true
+    },
+    {
+      "id": 23,
+      "type": "furniture",
+      "name": "Кровать",
+      "price": 18000,
+      "size": "180x200",
+      "colors": ["white", "gray", "brown"],
+      "installment": true
+    },
+    {
+      "id": 24,
+      "type": "food",
+      "name": "Мандарины",
+      "price": 120,
+      "expiryDate": "2024-06-30",
+      "manufactureDate": "2024-06-15"
+    },
+    {
+      "id": 25,
+      "type": "clothing",
+      "name": "Рубашка",
+      "price": 1500,
+      "sizes": ["S", "M", "L"],
+      "colors": ["white", "blue", "pink"]
+    },
+    {
+      "id": 26,
+      "type": "electronics",
+      "name": "Монитор",
+      "price": 25000,
+      "power": "45W",
+      "colors": ["black", "silver"]
+    },
+    {
+      "id": 27,
+      "type": "furniture",
+      "name": "Комод",
+      "price": 8000,
+      "size": "120x80x40",
+      "colors": ["brown", "white"]
+    },
+    {
+      "id": 28,
+      "type": "food",
+      "name": "Огурцы",
+      "price": 70,
+      "expiryDate": "2024-06-25",
+      "manufactureDate": "2024-06-10"
+    },
+    {
+      "id": 29,
+      "type": "clothing",
+      "name": "Юбка",
+      "price": 1800,
+      "sizes": ["S", "M", "L"],
+      "colors": ["black", "gray"]
+    }
+  ]
+}

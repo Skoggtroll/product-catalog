@@ -1,0 +1,13 @@
+{
+  "importOrder": [
+    "^components/layout/(.*)$",
+    "^components/core/(.*)$",
+    "^components/feature/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderCaseInsensitive": true,
+  "importOrderGroupNamespaceSpecifiers": true,
+  "importOrderSortSpecifiers": true,
+  "jsxSingleQuote": false
+}
