@@ -5,7 +5,7 @@ import {
   IFurnitureProduct,
 } from "../../../schemas/interfaces";
 import ElementWithTitle from "../../core/display/ElementWithTitle";
-import Flex from "../../core/layouts/Flex";
+import Flex from "../../core/layoutAdapters/Flex";
 import RadioColorPicker from "../RadioColorPicker";
 import Text from "../../core/display/Typography/Text";
 import { RadioButton, RadioGroup } from "../../core/controls/Radio";

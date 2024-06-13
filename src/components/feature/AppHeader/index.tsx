@@ -2,7 +2,7 @@ import { Header } from "antd/es/layout/layout";
 import Title from "../../core/display/Typography/Title";
 import Badge from "../../core/display/Badge";
 import { ShoppingCartOutlined } from "@ant-design/icons";
-import Flex from "../../core/layouts/Flex";
+import Flex from "../../core/layoutAdapters/Flex";
 import "./index.scss";
 
 export interface AppHeaderProps {}

@@ -3,7 +3,7 @@ import { ProductTypesEnum } from "../../../enums";
 import { TProduct } from "../../../schemas/types";
 import ElementWithTitle from "../../core/display/ElementWithTitle";
 import Text from "../../core/display/Typography/Text";
-import Space from "../../core/layouts/Space";
+import Space from "../../core/layoutAdapters/Space";
 import {
   ClothingDetails,
   ElectronictsDetails,

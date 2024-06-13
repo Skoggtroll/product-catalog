@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Flex from "../../core/layouts/Flex";
+import Flex from "../../core/layoutAdapters/Flex";
 import "./index.scss";
 import { ColorSquare } from "./ColorSquare";
 

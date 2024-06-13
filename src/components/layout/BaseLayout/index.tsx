@@ -1,4 +1,8 @@
-import { LayoutContainer, Footer, Content } from "../../core/layouts/Layout";
+import {
+  LayoutContainer,
+  Footer,
+  Content,
+} from "../../core/layoutAdapters/Layout";
 import AppHeader from "../../feature/AppHeader";
 import AdaptiveContainer from "../AdaptiveContainer";
 import HomePage from "../../../pages/HomePage";
@@ -13,7 +17,7 @@ const BaseLayout = () => {
           <HomePage />
         </AdaptiveContainer>
       </Content>
-      <Footer></Footer>
+      <Footer />
     </LayoutContainer>
   );
 };

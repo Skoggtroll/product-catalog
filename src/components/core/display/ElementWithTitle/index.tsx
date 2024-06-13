@@ -1,6 +1,6 @@
 import Text from "../../display/Typography/Text";
 import { PropsWithChildren } from "react";
-import Flex from "../../layouts/Flex";
+import Flex from "../../layoutAdapters/Flex";
 import { FlexProps } from "antd";
 import clsx from "clsx";
 import "./index.scss";
