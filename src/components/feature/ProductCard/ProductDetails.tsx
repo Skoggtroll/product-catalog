@@ -9,6 +9,7 @@ import Flex from "../../core/layoutAdapters/Flex";
 import RadioColorPicker from "../RadioColorPicker";
 import Text from "../../core/display/Typography/Text";
 import { RadioButton, RadioGroup } from "../../core/controls/Radio";
+import { formatDate } from "../../../utils";
 
 const ColorDetailsRow = ({ colors }: { colors: string[] }) => {
   return (
@@ -58,13 +59,14 @@ const FurnitureDetails = ({ product }: { product: IFurnitureProduct }) => {
 };
 
 const FoodDetails = ({ product }: { product: IFoodProduct }) => {
+  const { manufactureDate, expiryDate } = product;
   return (
     <Flex vertical>
       <ElementWithTitle title={"Изготовлено:"}>
-        <Text>{product.manufactureDate}</Text>
+        <Text>{formatDate(manufactureDate)}</Text>
       </ElementWithTitle>
       <ElementWithTitle title={"Употребить до:"}>
-        <Text>{product.expiryDate}</Text>
+        <Text>{formatDate(expiryDate)}</Text>
       </ElementWithTitle>
     </Flex>
   );
