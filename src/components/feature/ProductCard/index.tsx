@@ -49,7 +49,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
         />
       }
     >
-      {oldPrice ?? (
+      {Boolean(oldPrice) && (
         <Text className="sale_title" type="danger">
           Акция!
         </Text>
