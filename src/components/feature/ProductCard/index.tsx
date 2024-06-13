@@ -1,18 +1,18 @@
-import { currencySymbol, defaultImagePaths } from "../../../constants";
-import { ProductTypesEnum } from "../../../enums";
-import { TProduct } from "../../../schemas/types";
-import ElementWithTitle from "../../core/display/ElementWithTitle";
-import Text from "../../core/display/Typography/Text";
-import Space from "../../core/layoutAdapters/Space";
+import Text from "components/core/display/Typography/Text";
 import {
   ClothingDetails,
   ElectronictsDetails,
   FoodDetails,
   FurnitureDetails,
+  InstallmentDetails,
+  PriceDetails,
 } from "./ProductDetails";
-import { CardContainer, CardMeta } from "../../core/display/Card";
+import { useMemo } from "react";
+import { TProduct } from "schemas/types";
+import { defaultImagePaths } from "constants/Product";
+import { ProductTypesEnum } from "enums";
+import { CardContainer, CardMeta } from "components/core/display/Card";
 import "./index.scss";
-import { useCallback } from "react";
 
 export interface ProductCardProps {
   product: TProduct;
@@ -23,7 +23,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
   const productImageSrc = defaultImagePaths[productType];
 
-  const renderDetails = useCallback(() => {
+  const Details = useMemo(() => {
     switch (productType) {
       case ProductTypesEnum.CLOTHING:
         return <ClothingDetails product={product} />;
@@ -38,44 +38,6 @@ const ProductCard = ({ product }: ProductCardProps) => {
     }
   }, [product, productType]);
 
-  const renderPrice = useCallback(() => {
-    if (oldPrice) {
-      return (
-        <Space>
-          <Text type={"danger"}> {`${price} ${currencySymbol}`}</Text>
-          <Text delete disabled>
-            {`${oldPrice} ${currencySymbol}`}
-          </Text>
-        </Space>
-      );
-    }
-    return <Text>{`${price} ${currencySymbol}`}</Text>;
-  }, [oldPrice, price]);
-
-  const renderInstallment = useCallback(() => {
-    if (installment) {
-      return (
-        <ElementWithTitle title={"В рассрочку по:"}>
-          <Text type="success">
-            {`${(price / 12).toFixed(2)} ${currencySymbol}`}
-          </Text>
-        </ElementWithTitle>
-      );
-    }
-    return null;
-  }, [price, installment]);
-
-  const renderBadge = useCallback(() => {
-    if (oldPrice) {
-      return (
-        <Text className="sale_title" type="danger">
-          Акция!
-        </Text>
-      );
-    }
-    return null;
-  }, [oldPrice]);
-
   return (
     <CardContainer
       className="product_card"
@@ -87,11 +49,18 @@ const ProductCard = ({ product }: ProductCardProps) => {
         />
       }
     >
-      {renderBadge()}
-      <CardMeta title={name} description={renderPrice()} />
+      {oldPrice ?? (
+        <Text className="sale_title" type="danger">
+          Акция!
+        </Text>
+      )}
+      <CardMeta
+        title={name}
+        description={<PriceDetails price={price} oldPrice={oldPrice} />}
+      />
       <div className="product_card_details_container">
-        {renderInstallment()}
-        {renderDetails()}
+        <InstallmentDetails price={price} installment={installment} />
+        {Details}
       </div>
     </CardContainer>
   );

@@ -3,7 +3,7 @@ import { TProduct } from "../../schemas/types/Product";
 
 export const productsApi = createApi({
   reducerPath: "productsApi",
-  baseQuery: fetchBaseQuery({ baseUrl: process.env.API_SERVER }),
+  baseQuery: fetchBaseQuery({ baseUrl: "/" }),
   tagTypes: ["products"],
   endpoints: (builder) => ({
     getProducts: builder.query<TProduct[], unknown>({

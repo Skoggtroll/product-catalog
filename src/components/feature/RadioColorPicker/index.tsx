@@ -1,8 +1,7 @@
 import { useState } from "react";
-import Flex from "../../core/layoutAdapters/Flex";
-import "./index.scss";
 import { ColorSquare } from "./ColorSquare";
-
+import Flex from "components/core/layoutAdapters/Flex";
+import "./index.scss";
 export interface RadioColorPickerProps {
   colorList: string[];
   defaultValue?: string;

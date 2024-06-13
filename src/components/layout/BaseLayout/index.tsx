@@ -1,11 +1,11 @@
+import AppHeader from "components/feature/AppHeader";
 import {
-  LayoutContainer,
-  Footer,
   Content,
-} from "../../core/layoutAdapters/Layout";
-import AppHeader from "../../feature/AppHeader";
+  Footer,
+  LayoutContainer,
+} from "components/core/layoutAdapters/Layout";
 import AdaptiveContainer from "../AdaptiveContainer";
-import HomePage from "../../../pages/HomePage";
+import HomePage from "pages/HomePage";
 import "./index.scss";
 
 const BaseLayout = () => {

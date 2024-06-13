@@ -1,7 +1,7 @@
 import { Radio } from "antd";
+import { RadioButtonProps as AntRadioButtonProps } from "antd/lib/radio/radioButton";
 
-const { Button } = Radio;
-export interface RadioButtonProps extends React.ComponentProps<typeof Button> {}
+export interface RadioButtonProps extends AntRadioButtonProps {}
 
 export const RadioButton = (props: RadioButtonProps) => {
   return <Radio.Button {...props} />;

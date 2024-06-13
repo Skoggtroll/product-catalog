@@ -1,5 +1,10 @@
 import { PropsWithChildren } from "react";
-import { ColProps, Row, RowProps, Col } from "../../core/layoutAdapters/Grid";
+import {
+  ColProps,
+  Row,
+  RowProps,
+  Col,
+} from "components/core/layoutAdapters/Grid";
 
 export interface AdaptiveContainerProps extends PropsWithChildren {
   breakPoints?: Pick<ColProps, "xs" | "sm" | "md" | "lg" | "xl" | "xxl">;

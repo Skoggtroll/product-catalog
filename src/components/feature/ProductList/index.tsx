@@ -1,8 +1,7 @@
-import { TProduct } from "../../../schemas/types";
+import { TProduct } from "schemas/types";
+import { Col, Row } from "components/core/layoutAdapters/Grid";
 import ProductCard from "../ProductCard";
-import { Col, Row } from "../../core/layoutAdapters/Grid";
 import "./index.scss";
-
 export interface ProductListProps {
   products?: TProduct[];
 }

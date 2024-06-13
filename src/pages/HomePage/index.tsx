@@ -1,7 +1,7 @@
-import { useGetProductsQuery } from "../../store/api/productsApi";
-import ProductList from "../../components/feature/ProductList";
-import Spin from "../../components/core/display/Spin";
-import Alert from "../../components/core/display/Alert";
+import { useGetProductsQuery } from "store/api/productsApi";
+import Spin from "components/core/display/Spin";
+import Alert from "components/core/display/Alert";
+import ProductList from "components/feature/ProductList";
 import "./index.scss";
 
 const HomePage = () => {
